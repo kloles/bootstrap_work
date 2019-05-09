@@ -1,0 +1,96 @@
+/*Подключение шрифта */
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("fonts/16501.ttf"); format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+RalewayRegular {
+    font-size: 3vmin;
+}
+
+RalewayRegularZ {
+    font-size: 6vmin;
+}
+
+/*Тема */
+
+body {
+    font-family: "RalewayRegular", Sans-Serif;
+    color: #8B0000;
+
+    background-image: url("image/fon11.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ /*Карусель*/
+.carousel {
+    position: center;
+    /*width: 72vmin;*/
+    padding: 25px 60px;
+
+}
+
+.carousel img {
+
+    width: 30vmin;
+    height: 30vmin;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 15vmin;
+    padding: 0;
+
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    /*display: block;*/
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+
+    cursor: pointer;
+
+}
+
+.prev {
+    left: 1%;
+     /*width: 65vmin;*/
+
+}
+
+.next {
+    right: 1%;
+}
+
+.gallery {
+    width: 60vmin;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 30vmin;
+    width: 200vmin;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+
+
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}
